@@ -1,0 +1,13 @@
+{
+  "name": "testtask",
+  "version": "1.0.0",
+  "description": "test task",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server",
+    "server-dev": "nodemon server",
+    "client": "npm start --prefix client"
+  },
+  "author": "",
+  "license": "ISC"
+}
