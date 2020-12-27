@@ -11,7 +11,7 @@ const Search = () => {
   };
 
   const searchHandler = () => {
-    if (search) dispatch(searchWeather({ country: search }));
+    if (search) dispatch(searchWeather({ location: search }));
   };
 
   return (

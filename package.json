@@ -6,12 +6,15 @@
   "scripts": {
     "server": "node server",
     "server-dev": "nodemon server",
-    "client": "npm start --prefix client"
+    "client": "npm start --prefix client",
+    "install-client": "npm install --prefix client",
+    "install-all": "npm run install-client & npm install"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
+    "cors": "^2.8.5",
     "express": "^4.17.1"
   }
 }

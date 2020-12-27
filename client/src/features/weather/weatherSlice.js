@@ -3,12 +3,12 @@ import { weatherApi } from "./api";
 
 export const searchWeather = createAsyncThunk(
   "weather",
-  async ({ queryParams }, thunkAPI) => {
+  async (queryParams, thunkAPI) => {
     try {
       const response = await weatherApi.getWeather(queryParams);
       return response.data;
     } catch (error) {
-      thunkAPI.rejectWithValue(error.response.data);
+      return thunkAPI.rejectWithValue(error.response.data);
     }
   }
 );
