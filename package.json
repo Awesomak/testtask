@@ -8,7 +8,7 @@
     "server-dev": "nodemon server",
     "client": "npm start --prefix client",
     "install-client": "npm install --prefix client",
-    "install-all": "npm run install-client & npm install"
+    "install-all": "npm install & npm run install-client"
   },
   "author": "",
   "license": "ISC",
